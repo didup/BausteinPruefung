@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/all.css">
+    <title>Startseite - Juicy</title>
+</head>
+<body class="bg-braun">
+    <!--    Header  -->
+    <header class="container-fluid shadow sticky-top bg-dunkelgr pt-2 pb-0 pb-md-4">
+        <div class="container px-2">
+            <div class="row">    
+                <div class="logo col-md-3">
+                    <a href="index.html"><img class="img-fluid" src="img/juicy_logo.png" alt=""></a>
+                </div>
+                <!-- Hamburger Menu -->
+                <input type="checkbox" id="mobile">
+                <label for="mobile" class="burger text-white my-2 fs-4">&#9776; Menu</label>
+                <ul class="nav col-md-7 ps-md-0 offset-md-2 justify-content-end align-items-end flex-md-nowrap"> 
+                    <li class="nav-item col-12 my-2 my-md-0 ps-3 ps-md-5 col-md-auto">
+                      <a class="nav-link text-white" href="index.html">Startseite</a>
+                    </li>
+                    <li class="nav-item col-12 my-2 my-md-0 ps-3 ps-md-5 col-md-auto">
+                      <a class="nav-link text-white" href="ueber.html">Über Juicy</a>
+                    </li>
+                    <li class="nav-item col-12 my-2 my-md-0 ps-3 ps-md-5 col-md-auto">
+                      <a class="nav-link text-white" href="sorten.html">Sorten</a>
+                    </li>
+                    <li class="nav-item col-12 my-2 my-md-0 ps-3 ps-md-5 col-md-auto">
+                      <a class="nav-link text-white" href="galerie.html">Galerie</a>
+                    </li>
+                    <li class="nav-item col-12 my-2 mb-4 my-md-0 ps-3 ps-md-5 col-md-auto">
+                        <a class="nav-link text-white active" aria-current="page" href="kontakt.html">Kontakt</a>
+                    </li>
+                </ul>
+            </div> 
+        </div>
+    </header>
+
+    <!--    Main    -->
+    <main class="container-fluid mt-3 mb-5">
+      
+        <figure class="container px-0 mb-4">
+            <img src="img/kopfbild.png" alt="" class="img-fluid">
+        </figure>
+
+        <div class="container p-0">
+            <div class="row gy-5">
+                <div class="col-md-8 d-flex align-items-stretch"> <!--  ?  -->
+                        <div class="card w-100">
+                            <div class="card-body">  
+                                <div class="container-fluid p-2">
+                                    <form class="needs-validation" novalidate>
+                                        <h2 class="card-title h1">Schreib uns!</h2>
+                                        <div class="mb-3">    
+                                            <label for="name" class="form-label">Dein Name*</label>
+                                            <input type="text" class="form-control" name="name" id="name" required>
+                                            <div class="invalid-feedback">
+                                             Bitte gib einen Namen ein.
+                                            </div>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="email" class="form-label">Deine E-mail Adresse*</label>
+                                            <input type="email" class="form-control" name="e-mail" id="email" placeholder="name@beispiel.com" required>
+                                            <div class="invalid-feedback">
+                                                Bitte gib eine gültige E-mail Adresse ein.
+                                               </div>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="nachricht" class="form-label">Deine Nachricht*</label>
+                                            <textarea class="form-control" id="nachricht" name="nachricht" rows="6" required></textarea>
+                                            <div class="invalid-feedback">
+                                               Bitte lass uns eine Nachricht mit deinem Anliegen da.
+                                               </div>
+                                        </div>
+                                        <div class="mb-3">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" required>
+                                                <label class="form-check-label" for="flexCheckDefault">
+                                                  <span class="text-black">Ich akzeptiere die</span> <a href="#">AGB'S</a>
+                                                </label>
+                                                <div class="invalid-feedback">
+                                                    Bitte akzeptiere unsere AGB's.
+                                                    </div>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex justify-content-end"><button class="btn btn-primary form-btn" type="submit">Submit form</button></div>
+                                        
+                                    </form>
+                                </div>
+                            </div>
+                    </div>        
+                </div> 
+                    <div class="col-md-4 d-flex align-items-stretch">  
+                        <div class="card w-100">
+                            <div class="card-body">  
+                                <h2 class="card-title h1">Anschrift</h2>
+                                <p>Juicy &#174;<br>
+                                    Große Elbstraße 77 <br>
+                                    22767 Hamburg</p>
+
+                                <p>Tel. +49 40 123 456 7 <br>
+                                    Fax. +49 40123 456 8</p>
+
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15950.853884205168!2d9.943617354424253!3d53.537974822682536!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b18f7ee811876b%3A0x8b033a4dbab841!2sGro%C3%9Fe%20Elbstra%C3%9Fe%2077%2C%2022767%20Hamburg!5e0!3m2!1sde!2sde!4v1687345404395!5m2!1sde!2sde" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+                        </div>   
+                    </div>
+                
+            </div>   
+        </div>
+    </main>
+
+
+    <!--    Footer  -->
+    <footer class="container-fluid pt-5">
+        <div class="container bg-hellgr fixed-bottom">
+            <div class="row">
+                <div class="col-6 text-start p-2 px-3">
+                    <a href="#"><i class="fa-regular fa-envelope pe-2" style="color: #ffffff;"></i><span class="text-white">Schreib uns</span></a>
+                </div>
+
+                <div class="col-6 text-end p-2 px-3">
+                    <a href="https://www.youtube.com/"><i class="fa-brands fa-youtube ps-2" style="color: #ffffff;"></i></a>
+                    <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram ps-2" style="color: #ffffff;"></i></a>
+                    <a href="https://twitter.com/"><i class="fa-brands fa-twitter ps-2" style="color: #ffffff;"></i></a>
+                </div>
+            </div>
+                
+        </div>
+
+    </footer>
+    
+
+
+
+    <script src="js/bootstrap.bundle.js"></script>
+
+    <script>
+        (() => {
+  'use strict'
+        
+  // Fetch all the forms we want to apply custom Bootstrap validation styles to
+  const forms = document.querySelectorAll('.needs-validation')
+        
+  // Loop over them and prevent submission
+  Array.from(forms).forEach(form => {
+    form.addEventListener('submit', event => {
+      if (!form.checkValidity()) {
+        event.preventDefault()
+        event.stopPropagation()
+      }
+  
+      form.classList.add('was-validated')
+    }, false)
+  })
+})()
+</script>
+</body>
+</html>

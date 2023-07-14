@@ -1,0 +1,110 @@
+/*  Schrift Import*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Righteous&display=swap');
+/* Max Seitenbreite*/
+.container {max-width:1200px !important;}
+
+/*  =================
+        Navigation
+    ================= */
+
+/*  Hamburger Menu  */
+#mobile, .burger {display:none;}
+
+@media screen and (max-width:767px) {
+    .burger, nav a{    display:block;
+    }
+  
+    .nav    {   
+                max-height: 0;
+                overflow:   hidden;
+                transition: max-height 1s ease-in-out
+    }
+
+    #mobile:checked + .burger + .nav{
+        max-height: 500px;
+    }
+}
+
+/*  ===================
+        Typographie
+    ====================  */
+p {font-family:'Open Sans', sans-serif;}
+
+h1, h2, h3, .nav-link {font-family: 'Righteous', sans-serif; ;}
+
+.nav-link {     font-size:1rem!important;
+                padding:0 !important;
+                font-size:18px!important;
+                line-height:12px;
+}
+
+/*  ===================
+        Farben
+    ===================   */ 
+
+/*  Dokumentfarben Farben
+
+Dunles Grün: #4F5C20
+Helles Grün: #8DA834
+Braun :#412A1D
+Gelb: #FBCE3A
+*/       
+
+/*  Hintergrundfarben   */
+.bg-dunkelgr    {background-color:#4F5C20 ;}
+.bg-hellgr      {background-color:#8DA834 ;}
+.bg-braun       {background-color:#412A1D ;}
+
+/* Link Farben */
+.active             {color: #FBCE3A!important;}
+.nav-item a:hover   {color:#FBCE3A!important;}
+a                   {text-decoration: none;}
+
+/* Button Farbe */
+.btn-primary{ 
+                background-color: #8DA834;
+                border:none;
+}
+
+.btn-primary:hover {
+                background-color: #FBCE3A!important;
+                color:#412A1D!important;
+}
+
+/*  =======================
+        Seitenspezifisch
+    ======================= */
+
+/*  Sorten
+    ----------------
+    Neuheit Button*/
+    .neuheit {
+        position:absolute;
+        top:-52px;
+        left:-16px;
+        width:80px;
+        transform:rotate(-10deg);
+}
+
+@media screen and (max-width:767px) {
+    .neuheit {
+        top:-40px;
+        left:20px;
+    }
+
+    .nav-link {
+        width:100%;
+        display:flex;
+        line-height: 28px;
+        box-shadow: inset 0 -2px #8DA834;
+     }
+     .nav-link{         font-size: 1.2rem!important;}
+}
+
+
+/*  Kontakt
+    ---------------------
+    iFrame Google-Maps */
+iframe {
+    width:100%;
+    aspect-ratio: 1/1;}
